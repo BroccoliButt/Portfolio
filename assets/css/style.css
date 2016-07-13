@@ -1,0 +1,245 @@
+@font-face {
+    font-family: Governor;
+    src: url('fonts/governor.ttf') format('embedded-opentype');
+}
+
+body{
+	margin-bottom: 400px;
+	color: #000;
+	background: #efdfdf;
+	overflow-y:hidden;
+	font-family: Georgia,Times,Times New Roman,serif; 
+}
+::selection {
+  background: #000; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: #000; /* Gecko Browsers */
+  color: #fff;
+}
+a, a:visited{
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+/* Navigation */
+.navbar {
+	padding: 30px 0px 0px;
+	z-index: 5000;
+}
+.navigation{
+	background: rgba(255, 255, 255, .9);
+	height: 100vh;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	z-index: 3000;
+	top: 0;
+	margin: 0px;
+}
+ul{
+	list-style: none;
+	font-size: 4rem;
+}
+li{
+	line-height: 250%;
+	position: relative;
+	top: 31%;
+	transform: translateY(-50%);
+}
+h1{
+	font-size: 5rem;
+}
+h3,h4,h5,h6{
+	font-family: Governor;
+}
+h6{
+	font-size: 1.1rem;
+}
+
+/* Side bars */
+.left, .right{
+	z-index: 2000;
+	position: fixed;
+	height: 100%;
+	text-transform: uppercase;
+}
+.right{
+	right: 0;
+}
+.left h6, .right h6{
+	position: relative;
+	top: 48%;
+	transform: translateY(-50%);	
+}
+.left h6{
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.right h6{
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.lr{
+	margin-left: -38px;
+}
+.pf{
+	margin-right: -19px;
+}
+.aw{
+	margin-left: -30px;
+}
+.np{
+	margin-right: -45px;
+}
+.pj{
+	margin-right: -36px;
+}
+
+/* Home page */
+.content {
+	height: 100vh;
+	background: #efdfdf;
+	margin: 0px;
+}
+#main-photo{
+	height: 100vh;
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	padding: 0px;
+	z-index: 1000;
+}
+.fade-bg{
+	background: rgba(255,255,255,.7);
+	height: 100vh;
+	margin-top: -20px;
+}
+.home-title{
+	position: relative;
+	top: 48%;
+	transform: translateY(-50%);
+	right: 75%;
+}
+
+/* Work section */
+.work {
+	padding: 15px;
+	background: #fff;
+}
+.work h2{
+	padding: 15px;
+}
+.work-box {
+	padding: 15px;
+}
+.cover{
+	overflow: hidden;
+	width:100%;
+	padding-top:100%;
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+}
+.fade-box{
+	transition: all 0.2s ease-in-out;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 96%;
+	text-align: center;
+	background:rgba(255,255,255,0);
+	height: 100%;
+}
+
+.fade-box:hover{
+	background:rgba(255,255,255,.7);
+}
+.work-title {
+	transition: all 0.2s ease-in-out;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);	
+	width: 98%;
+	opacity: 0;
+}
+
+/* Project Pages */
+.project-title{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 80%;
+}
+.brief{
+	position: relative;
+	top: 75%;
+	transform: translateY(-50%);
+	padding: 0px 55px;
+}
+.project-photos{
+	padding: 15px;
+	background: #fff;
+}
+.project-photos img{
+	margin: 0px auto;
+	padding: 15px;
+	opacity: 0;
+}
+.inline-pics{
+	padding: 0px;
+}
+
+/* Tumblr Section */
+.date{
+	text-align: center;
+	font-size: 12px;
+	padding-top: 15px;
+}
+.post-caption{
+	padding: 0px 50px;
+	display: block;
+}
+#tumblog h2{
+	text-align: center;
+	font-family: Governor;
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+
+/* Background Images */
+.main {
+	background: url(http://placehold.it/1200) no-repeat center center;
+}
+.truck {
+	background: url(../img/truck/cover-truck.jpg) no-repeat center center;
+}
+.newgoth {
+	background: url(../img/new-gotham/cover-newgoth.gif) no-repeat center center;
+} 
+
+/* Footer */
+footer{
+	padding: 75px 15px 15px;
+	height: 450px;
+	width: 100%;
+	background: #efdfdf;
+	position: fixed;
+	bottom: 0;
+	z-index: -3000;
+	opacity: 0;
+}

@@ -1,7 +1,8 @@
 @font-face {
     font-family: Governor;
     src: url('fonts/governor.ttf') format('embedded-truetype');
-	
+	src: local('☺'),
+		url('fonts/governor.ttf') format ('truetype');
 }
 
 body{

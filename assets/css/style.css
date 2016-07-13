@@ -1,9 +1,14 @@
+<style>
+@import 'https://fonts.googleapis.com/css?family=Poppins:700';
+</style>
+
 @font-face {
     font-family: Governor;
     src: url('fonts/governor.ttf') format('embedded-truetype');
 	src: local('☺'),
 		url('fonts/governor.ttf') format ('truetype');
 }
+@import 'https://fonts.googleapis.com/css?family=Poppins:700';
 
 body{
 	margin-bottom: 400px;
@@ -59,7 +64,8 @@ h1{
 	font-size: 5rem;
 }
 h3,h4,h5,h6{
-	font-family: Governor;
+	font-family: Governor, Poppins;
+	text-transform: uppercase;
 }
 h4 {
 	line-height: 1.5;
@@ -81,7 +87,8 @@ h6{
 .left h6, .right h6{
 	position: relative;
 	top: 48%;
-	transform: translateY(-50%);	
+	transform: translateY(-50%);
+	line-height: 0;	
 }
 .left h6{
 	-webkit-transform: rotate(90deg);
@@ -222,9 +229,10 @@ h6{
 }
 #tumblog h2{
 	text-align: center;
-	font-family: Governor;
+	font-family:  Governor, Poppins;
 	font-size: 18px;
 	padding-bottom: 5px;
+	text-transform: uppercase;
 }
 
 /* Background Images */

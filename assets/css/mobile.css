@@ -9,12 +9,29 @@
 		transform: translateY(-50%);
 		padding: 0px 55px;
 	}
+	.content {
+		height: 500px;
+	}
 }
+
 @media (max-width: 767px) {
 	
 }
 @media (max-width: 414px) {
-	
+	.project-title h1{
+		font-size: 3.5rem;
+	}
+	h4{
+		padding-top: 20px;
+	}
+	ul {
+		font-size: 3rem;
+	}
+	li{
+		line-height: 200%;
+		top: 35%;
+		
+	}
 }
 
 

@@ -1,13 +1,13 @@
 @font-face {
     font-family: Governor;
-    src: url('fonts/governor.ttf') format('embedded-opentype');
+    src: url('fonts/governor.ttf') format('embedded-truetype');
+	
 }
 
 body{
 	margin-bottom: 400px;
 	color: #000;
 	background: #efdfdf;
-	overflow-y:hidden;
 	font-family: Georgia,Times,Times New Roman,serif; 
 }
 ::selection {
@@ -46,6 +46,7 @@ a:hover{
 ul{
 	list-style: none;
 	font-size: 4rem;
+	padding-right: 45px;
 }
 li{
 	line-height: 250%;
@@ -58,6 +59,9 @@ h1{
 }
 h3,h4,h5,h6{
 	font-family: Governor;
+}
+h4 {
+	line-height: 1.5;
 }
 h6{
 	font-size: 1.1rem;

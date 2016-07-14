@@ -224,7 +224,7 @@ h6{
 	color: #999;
 }
 .post-caption{
-	padding: 0px 50px;
+	padding: 0px 50px 5px;
 	display: block;
 }
 #tumblog h2{
@@ -233,6 +233,11 @@ h6{
 	font-size: 18px;
 	padding-bottom: 5px;
 	text-transform: uppercase;
+}
+hr {
+	border: 2px solid #000;
+	width: 40px;
+	margin-top: 30px;
 }
 
 /* Background Images */

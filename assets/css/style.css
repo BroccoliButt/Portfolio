@@ -24,6 +24,9 @@ body{
   background: #000; /* Gecko Browsers */
   color: #fff;
 }
+p{
+	line-height: 170%;
+}
 a, a:visited{
 	transition: all 0.3s ease-in-out;
 	text-decoration: none;

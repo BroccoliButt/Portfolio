@@ -1,4 +1,11 @@
 @media (max-width: 991px) {
+	.home-title {
+		left: 0;
+		padding: 0px 55px;
+	}
+	.home-title p{
+		display: none;
+	}
 	.project-title{
 		left: 0;
 		padding: 0px 55px;
@@ -18,6 +25,9 @@
 	
 }
 @media (max-width: 414px) {
+	.home-title h1{
+		font-size: 3.5rem;
+	}
 	.project-title h1{
 		font-size: 3.5rem;
 	}

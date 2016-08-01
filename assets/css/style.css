@@ -52,12 +52,12 @@ a:hover{
 	top: 0;
 	margin: 0px;
 }
-ul{
+.navigation{
 	list-style: none;
 	font-size: 4rem;
 	padding-right: 45px;
 }
-li{
+.navigation li{
 	line-height: 250%;
 	position: relative;
 	top: 31%;
@@ -233,14 +233,14 @@ h6{
 .tags {
 	font-size: 9px;
 }
-#tumblog h2{
+#tumblrFeed h2{
 	text-align: center;
 	font-family:  Governor, Poppins;
 	font-size: 18px;
 	padding-bottom: 5px;
 	text-transform: uppercase;
 }
-#tumblog p{
+#tumblrFeed p{
 	padding-bottom: 15px;
 }
 hr {

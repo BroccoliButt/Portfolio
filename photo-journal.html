@@ -74,6 +74,7 @@
 		</div>
 		
 		<!-- Embed tumblr posts-->
+		<a name="feed"></a>
 		<div class="container-fluid">
 			<div class="row project-photos">
 				<div id="tumblrFeed">
@@ -81,14 +82,14 @@
 				
 				<!-- Pagination-->
 				<div class="col-xs-12">
-					<ul class="pagination">
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-					</ul>
+					<nav aria-label="...">
+						<ul class="pager">
+							<li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+							<li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+						</ul>
+					</nav>
 				</div>
+				
 			</div>
 		</div>
 		
@@ -105,7 +106,7 @@
 		
 		
   <!-- Load my tumblog -->
-	<script src="https://broccolibutt.tumblr.com/api/read/json?type=photo&num=2&start=i" type="text/javascript">
+	<script src="https://broccolibutt.tumblr.com/api/read/json?type=photo&num=2&start=1" type="text/javascript">
 	</script>
 		
 	</body>

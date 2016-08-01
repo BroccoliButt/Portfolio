@@ -249,6 +249,10 @@ hr {
 	margin-top: 15px;
 }
 
+.pagination-nav {
+	z-index: 3000;
+}
+
 /* Background Images */
 .home {
 	background: url(../img/me.jpg) no-repeat center center;

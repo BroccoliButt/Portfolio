@@ -14,16 +14,16 @@ var main = function() {
 		var postCaption = "<div class='post-caption col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2'>" + thisPost["photo-caption"] + "<hr>" + "</div>";
 
 		/* Show post photo */
-	    $('#tumblog').append("<img src='" + thisPost["photo-url-1280"] + "'>");
+	    $('#tumblrFeed').append("<img src='" + thisPost["photo-url-1280"] + "'>");
 
 		/* For posts with multiple photos */
 		for (var j=1;j<thisPost.photos.length;j++){
 			var photoSet=thisPost.photos[j];
-		    $('#tumblog').append("<img src='" + photoSet["photo-url-1280"] + "'>");
+		    $('#tumblrFeed').append("<img src='" + photoSet["photo-url-1280"] + "'>");
 		};
 		
 		/* Show post date and caption */		
-	    $('#tumblog').append(date + postCaption);
+	    $('#tumblrFeed').append(date + postCaption);
 		
 		/* Make post photos responsive */
 		$('img').addClass('img-responsive');

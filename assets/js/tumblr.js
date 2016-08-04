@@ -1,16 +1,88 @@
 var main = function() {
 
+    /* PAGINATION STUFF -- display correct posts based on which page number is in URL */
 
-	if(window.location.href.indexOf("page") > -1) {
-		var currentPage = 0;
-		var k = currentpage + 3;
-    };
+        /* Next and Previous page <a> tags */
+        var nextPage = document.getElementById("nextPage");
+		var prevPage = document.getElementById("prevPage");
+
+        /* Next and Previous page buttons <li> */		
+        var prevButton = document.getElementsByClassName("previous");	
+        var nextButton = document.getElementsByClassName("next");
+
+        /* Get current URL */
+        var url = window.location.href;
+	
+        /* Extract which page number is in the URL */		
+        var subURL = url.substring(url.indexOf('#')-1);
+        var currentPage = subURL.charAt(0);
+
+        /* Change which post to start reading from in JSON file */		
+        var startingPoint = currentPage * 3 - 3;
+
+
+
+        /* FUNCTIONS */
+
+            /* next button adds 1 to current page # */
+            function nextPageLoad() {
+                nextPage.onclick = function() {
+                    currentPage++;
+                    this.href="?page=" + currentPage + "#feed";
+                };
+            };
+
+            /* previous button subtracts 1 from current page # */
+            function prevPageLoad() {
+                prevPage.onclick = function() {
+                    currentPage--;
+                    this.href="?page=" + currentPage + "#feed";
+                }
+            }
+
+
+
+		/*
+        * If  you're on page 2, remove "page" from previous link.
+        * This is so previous button is disabled again.
+        */
+            
+		if(url.indexOf("page=2#") > -1){
+			prevPage.onclick = function() {
+				this.href="photo-journal.html#feed"
+			}
+			
+			nextPageLoad();
+		
+        } else {
+			
+			/* Call correct hrefs for next and previous buttons */
+			if(url.indexOf("page") > -1) {
+				
+                nextPageLoad();
+				prevPageLoad();
+    
+			} else {
+
+			    /* For the first page only */    
+				nextPage.onclick = function() {
+		    		this.href="?page=2#feed"
+		    	};
+				$(prevButton).addClass("disabled");
+		    };
+
+        };
+
+
 	
 
-	var tumblrURL = "https://broccolibutt.tumblr.com/api/read/json?num=3&start=" + k;
+	/* Link to JSON file to read feed from. Num is how many posts to display */
+	var tumblrURL = "https://broccolibutt.tumblr.com/api/read/json?num=3&start=" + startingPoint;
 	
 	
-	/* Link tumblr JSON file */
+	
+	
+	/* SHOW POSTS */
 	$.getScript(tumblrURL, function(jd) {      
    
 		/* Read JSON file and loop through posts */

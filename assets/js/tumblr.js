@@ -1,3 +1,6 @@
+/* TO DO: When you're on last post, disable next button*/
+
+
 var main = function() {
 
     /* PAGINATION STUFF -- display correct posts based on which page number is in URL */

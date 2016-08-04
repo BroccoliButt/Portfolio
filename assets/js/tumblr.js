@@ -20,8 +20,11 @@ var main = function() {
         var subURL = url.substring(url.indexOf('#')-1);
         var currentPage = subURL.charAt(0);
 
-        /* Change which post to start reading from in JSON file */		
-        var startingPoint = currentPage * 3 - 3;
+        /* Change how many posts per page */
+        var numPosts = 4;		
+        
+        /* Which post to start reading from in JSON file */		
+        var startingPoint = currentPage * numPosts - numPosts;
 
 
 
@@ -80,7 +83,7 @@ var main = function() {
 	
 
 	/* Link to JSON file to read feed from. Num is how many posts to display */
-	var tumblrURL = "https://broccolibutt.tumblr.com/api/read/json?num=3&start=" + startingPoint;
+	var tumblrURL = "https://broccolibutt.tumblr.com/api/read/json?num=" + numPosts + "&start=" + startingPoint;
 	
 	
 	

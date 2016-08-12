@@ -262,7 +262,10 @@ hr {
 }
 .newgoth {
 	background: url(../img/new-gotham/cover-newgoth.gif) no-repeat center center;
-} 
+}
+.odin {
+	background: url(../img/odin/odin-4.jpg) no-repeat center center;   
+}
 
 /* Footer */
 footer{

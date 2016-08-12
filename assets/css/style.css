@@ -63,6 +63,10 @@ a:hover{
 	top: 31%;
 	transform: translateY(-50%);
 }
+.logo{
+    width: 40px;
+}
+
 h1{
 	font-size: 5rem;
 }

@@ -28,13 +28,13 @@ p{
 	line-height: 170%;
 }
 a, a:visited{
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	text-decoration: none;
 	color: #000;
 }
 a:hover{
 	text-decoration: none;
-	color: #000;
+	color: #473c30;
 }
 
 /* Navigation */
@@ -266,6 +266,13 @@ hr {
 
 .pagination-nav {
 	z-index: 3000;
+}
+.pager li > a {
+    border: 0px;
+    font-size: 2.5rem;
+}
+.pager li > a:hover {
+    background: #fff;
 }
 
 /* Background Images */

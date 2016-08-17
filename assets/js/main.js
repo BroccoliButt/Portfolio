@@ -27,10 +27,10 @@ var main = function() {
 	
 	/* hide footer until reach bottom */	
 	$(window).scroll(function(){
-		if ($(window).scrollTop() >= 1300) {
+		if ($(window).scrollTop() >= 700) {
 			$("footer").css('opacity', '1');
 		}
-		if ($(window).scrollTop() <= 1300) {
+		if ($(window).scrollTop() <= 700) {
 			$("footer").css('opacity', '0');
 		}
 	});

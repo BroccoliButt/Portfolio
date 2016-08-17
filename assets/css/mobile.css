@@ -22,7 +22,17 @@
 }
 
 @media (max-width: 767px) {
-	
+    footer {
+        text-align: center !important;
+    }
+    footer ul{
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 5px;
+    }
+    footer .bottom{
+        margin-top: 65px;
+    }
 }
 @media (max-width: 414px) {
 	.home-title h1{
@@ -40,8 +50,8 @@
 	li{
 		line-height: 200%;
 		top: 35%;
-		
 	}
+    
 }
 
 

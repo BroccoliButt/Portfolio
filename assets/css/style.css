@@ -13,7 +13,7 @@
 body{
 	margin-bottom: 400px;
 	color: #000;
-	background: #efdfdf;
+	background: #fae3d1;
 	font-family: Georgia,Times,Times New Roman,serif; 
 }
 ::selection {
@@ -52,17 +52,25 @@ a:hover{
 	top: 0;
 	margin: 0px;
 }
-.navigation{
+.navigation ul{
 	list-style: none;
 	font-size: 4rem;
 	padding-right: 45px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 .navigation li{
 	line-height: 250%;
-	position: relative;
-	top: 31%;
-	transform: translateY(-50%);
 }
+.nav-contact{
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+    margin-top: 100px;
+    font-size: 1.2rem;
+}
+
 .logo{
     width: 40px;
 }
@@ -130,7 +138,7 @@ h6{
 /* Home page */
 .content {
 	height: 100vh;
-	background: #efdfdf;
+	background: #fae3d1;
 	margin: 0px;
 }
 #main-photo{
@@ -143,7 +151,7 @@ h6{
 	z-index: 1000;
 }
 .fade-bg{
-	background: rgba(255,255,255,.7);
+	background: rgba(249, 222, 201,.5);
 	height: 100vh;
 	margin-top: -20px;
 }
@@ -279,12 +287,34 @@ hr {
 
 /* Footer */
 footer{
-	padding: 30px 15px 15px;
+	padding: 30px 0px;
 	height: 450px;
 	width: 100%;
-	background: #efdfdf;
+	background: #fae3d1;
 	position: fixed;
 	bottom: 0;
 	z-index: -3000;
 	opacity: 0;
+}
+footer h3{
+    padding: 105px 0px 25px;
+}
+footer p{
+    padding-top: 15px;
+}
+footer .bottom{
+    background: #efbaaf;
+    margin-top: 87px;
+    padding: 20px 30px 30px;
+    bottom: 0;
+	font-family:  Governor, Poppins;
+    font-size: 1.2rem;
+}
+footer ul{
+    list-style-type: none;
+    text-align: right;
+}
+footer ul li{
+    display: inline-block;
+    padding-left: 25px;
 }

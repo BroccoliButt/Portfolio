@@ -270,6 +270,9 @@ hr {
 .odin {
 	background: url(../img/odin/odin-1.jpg) no-repeat center center;   
 }
+.journal {
+	background: url(../img/journal-cover.jpg) no-repeat center center;   
+}
 
 /* Footer */
 footer{

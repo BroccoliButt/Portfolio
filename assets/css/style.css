@@ -17,11 +17,11 @@ body{
 	font-family: Georgia,Times,Times New Roman,serif; 
 }
 ::selection {
-  background: #000; /* WebKit/Blink Browsers */
+  background: #3A405A; /* WebKit/Blink Browsers */
   color: #fff;
 }
 ::-moz-selection {
-  background: #000; /* Gecko Browsers */
+  background: #3A405A; /* Gecko Browsers */
   color: #fff;
 }
 p{
@@ -34,7 +34,7 @@ a, a:visited{
 }
 a:hover{
 	text-decoration: none;
-	color: #473c30;
+	color: #3A405A;
 }
 
 /* Navigation */
@@ -43,7 +43,7 @@ a:hover{
 	z-index: 5000;
 }
 .navigation{
-	background: rgba(255, 255, 255, .9);
+	background: rgba(255, 255, 255, 1);
 	height: 100vh;
 	text-align: center;
 	position: fixed;
@@ -59,6 +59,7 @@ a:hover{
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+    font-weight: bold;
 }
 .navigation li{
 	line-height: 250%;
@@ -77,6 +78,8 @@ a:hover{
 
 h1{
 	font-size: 5rem;
+    font-style: italic;
+    font-weight: bold;
 }
 h3,h4,h5,h6{
 	font-family: Governor, Poppins;
@@ -144,7 +147,7 @@ h6{
 	background: #fae3d1;
 	margin: 0px;
 }
-#main-photo{
+#home-photo, #main-photo{
 	height: 100vh;
 	background-size: cover !important;
 	-webkit-background-size: cover !important;
@@ -156,13 +159,8 @@ h6{
 .fade-bg{
 	background: rgba(249, 222, 201,.5);
 	height: 100vh;
-	margin-top: -20px;
 }
 .home-title{
-	position: relative;
-	top: 48%;
-	transform: translateY(-50%);
-	right: 75%;
 }
 
 /* Work section */
@@ -172,6 +170,10 @@ h6{
 }
 .work h2{
 	padding: 15px;
+    font-weight: bold;
+}
+.work a:hover{
+    color: #000;
 }
 .work-box {
 	padding: 15px;
@@ -210,14 +212,11 @@ h6{
 
 /* Project Pages */
 .project-title{
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 80%;
+    padding-bottom: 20px;
 }
 .brief{
 	position: relative;
-	top: 75%;
+	top: 50%;
 	transform: translateY(-50%);
 	padding: 0px 55px;
 }
@@ -228,7 +227,7 @@ h6{
 .project-photos img{
 	margin: 0px auto;
 	padding: 15px;
-	opacity: 0;
+	opacity: 1;
 }
 .inline-pics{
 	padding: 0px;
@@ -239,7 +238,7 @@ h6{
 	text-align: center;
 	font-size: 12px;
 	padding-top: 15px;
-	color: #999;
+	color: #000;
 }
 .post-caption{
 	padding: 0px 50px 5px;
@@ -277,7 +276,10 @@ hr {
 
 /* Background Images */
 .home {
-	background: url(../img/me.jpg) no-repeat center center;
+	background: url(../img/odin/odin-1.jpg) no-repeat center center;
+}
+.me {
+	background: url(../img/me.jpg) no-repeat center bottom;
 }
 .truck {
 	background: url(../img/truck/cover-truck.jpg) no-repeat center center;
@@ -319,6 +321,7 @@ footer .bottom{
     bottom: 0;
 	font-family:  Governor, Poppins;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 footer ul{
     list-style-type: none;

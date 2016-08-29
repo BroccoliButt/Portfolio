@@ -6,8 +6,13 @@
 	.home-title p{
 		display: none;
 	}
+    #main-photo{
+        margin-top: -20px;
+    }
 	.project-title{
-		left: 0;
+    	position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);
 		padding: 0px 55px;
 	}
 	.brief{

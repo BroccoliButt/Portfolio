@@ -27,7 +27,7 @@ var main = function() {
 	
 	/* hide footer until reach bottom */	
 	$(window).scroll(function(){
-		if ($(window).scrollTop() >= 700) {
+		if ($(window).scrollTop() >= 500) {
 			$("footer").css('opacity', '1');
 		}
 		if ($(window).scrollTop() <= 700) {
@@ -53,17 +53,17 @@ var main = function() {
 	/* Make post project photos responsive */
 	$('.project-photos img').addClass('img-responsive');
 	
-	
-	/* Every time the window is scrolled ... */
+
+	/* Every time the window is scrolled ... 
     $(window).scroll( function(){
     
-        /* Check the location of each desired element */
+        /* Check the location of each desired element 
         $('img').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            /* If the object is completely visible in the window, fade it in */
+            /* If the object is completely visible in the window, fade it in 
             if( bottom_of_window > bottom_of_object ){
                 
                 $(this).animate({'opacity':'1'},400);
@@ -71,7 +71,7 @@ var main = function() {
             }
             
         }); 
-    });
+    });*/
 
 	
 };

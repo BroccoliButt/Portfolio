@@ -43,7 +43,7 @@ a:hover{
 	z-index: 5000;
 }
 .navigation{
-	background: rgba(255, 255, 255, 1);
+	background: #efbaaf;
 	height: 100vh;
 	text-align: center;
 	position: fixed;
@@ -199,7 +199,7 @@ h6{
 }
 
 .fade-box:hover{
-	background:rgba(255,255,255,.7);
+	background:rgba(255,255,255,.8);
 }
 .work-title {
 	transition: all 0.2s ease-in-out;
@@ -315,6 +315,9 @@ hr {
 }
 .farenheit {
 	background: url(../img/farenheit/cover-farenheit.jpg) no-repeat center center;   
+}
+.brew {
+	background: url(../img/brew/brew-2.jpg) no-repeat center center;   
 }
 .journal {
 	background: url(../img/journal-cover.jpg) no-repeat center center;   

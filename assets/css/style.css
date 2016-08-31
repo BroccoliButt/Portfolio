@@ -91,7 +91,6 @@ h4 {
 h6{
 	font-size: 1.1rem;
 }
-
 /* Side bars */
 .left, .right{
 	z-index: 2000;
@@ -223,26 +222,6 @@ h6{
 .brief p{
     margin-bottom: 20px;
 }
-/*.footnotes{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -5px;
-    padding-bottom: 30px;
-}
- .footnotes-expanded{
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    background: #efbaaf;
-    font-size: 1rem;
-    padding: 10px 20px;
-	transition: all 0.2s ease-in-out;
-}
- .footnotes:hover + .footnotes-expanded{
-    bottom: 0;
-    top: 90%;
-} */
 .project-photos{
 	padding: 15px;
 	background: #fff;

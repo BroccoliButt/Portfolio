@@ -25,6 +25,9 @@
 }
 
 @media (max-width: 767px) {
+	.navigation ul{
+	    font-size: 2rem;
+	}
     footer {
         text-align: center !important;
     }
@@ -38,7 +41,9 @@
     }
 }
 @media (max-width: 414px) {
-	
+	.navigation ul{
+	    font-size: 1.5rem;
+	}
 	.home-title h1{
 		font-size: 3.5rem;
 	}

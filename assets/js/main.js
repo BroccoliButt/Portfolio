@@ -26,7 +26,6 @@ var main = function() {
 	$('.fade-box').mouseleave(function() {
 		$(this).children().css('opacity', '0');
 	});
-
 	
 	// hide footer until reach bottom	
 	$(window).scroll(function(){

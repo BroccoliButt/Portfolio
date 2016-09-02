@@ -61,7 +61,7 @@
 		top: 35%;
 	}
 	.project-title{
-		text-align: left ;
+		text-align:  ;
 	}
     .content {
         height: auto;
@@ -70,7 +70,8 @@
         position: auto !important;
         top: initial !important;
         transform: none !important;
-        padding: 65px;
+        padding-top: 65px;
+        padding-bottom: 65px;
     }
     footer h3{
         font-size: 1.7rem;

@@ -21,7 +21,7 @@ var main = function() {
         var currentPage = subURL.charAt(0);
 
         /* Change how many posts per page */
-        var numPosts = 4;		
+        var numPosts = 3;		
         
         /* Which post to start reading from in JSON file */		
         var startingPoint = currentPage * numPosts - numPosts;

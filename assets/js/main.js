@@ -1,9 +1,12 @@
 var main = function() {
-
-	/* Hide navigation to start */	
+    // Fade in new page on load
+    $("body").css("display", "none");
+    $("body").fadeIn(1000); 
+    
+	// Hide navigation to start	
 	$('.navigation').hide();
 	
-	/* Toggle navigation when menu is pressed */		
+	// Toggle navigation when menu is pressed		
     $('.fa-bars').click(function() {
 	    $('.navigation').fadeToggle(200);
 		$('.menu').toggleClass('fa-bars');
@@ -16,7 +19,7 @@ var main = function() {
 		$('.menu').addClass('fa-bars');
 	});
 
-	/* Work section: display work title when hover over cover image */
+	// Work section: display work title when hover over cover image
 	$('.fade-box').mouseenter(function() {
 		$(this).children().css('opacity', '1');
 	});
@@ -25,7 +28,7 @@ var main = function() {
 	});
 
 	
-	/* hide footer until reach bottom */	
+	// hide footer until reach bottom	
 	$(window).scroll(function(){
 		if ($(window).scrollTop() >= 500) {
 			$("footer").css('opacity', '1');
@@ -35,7 +38,7 @@ var main = function() {
 		}
 	});
 	
-	/* Replace with retina photos for retina screens */
+	// Replace with retina photos for retina screens
 	$(function () {
 		if (window.devicePixelRatio == 2) {
 			var images = $('img.hi-res');
@@ -50,7 +53,7 @@ var main = function() {
 		}
 	});
 	
-	/* Make post project photos responsive */
+	// Make post project photos responsive
 	$('.project-photos img').addClass('img-responsive');
 	
 

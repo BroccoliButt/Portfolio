@@ -1,4 +1,7 @@
 @media (max-width: 991px) {
+	.project-title{
+		text-align: center ;
+	}
 	.home-title {
 		left: 0;
 		padding: 0px 55px;
@@ -16,13 +19,8 @@
 		padding: 0px 55px;
 	}
 	.brief{
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-		padding: 0px 55px;
-	}
-	.content {
-		height: 50vh;
+		
+		padding: 30px 65px;
 	}
 }
 
@@ -40,11 +38,12 @@
     }
 }
 @media (max-width: 414px) {
+	
 	.home-title h1{
 		font-size: 3.5rem;
 	}
 	.project-title h1{
-		font-size: 3.5rem;
+		font-size: 3.2rem;
 	}
 	h4{
 		padding-top: 20px;
@@ -56,7 +55,24 @@
 		line-height: 200%;
 		top: 35%;
 	}
-    
+	.project-title{
+		text-align: left ;
+	}
+    .content {
+        height: auto;
+    }
+    .brief{
+        position: auto !important;
+        top: initial !important;
+        transform: none !important;
+        padding: 65px;
+    }
+    footer h3{
+        font-size: 1.7rem;
+    }
+    footer ul{
+        font-size: 1rem;
+    }
 }
 
 

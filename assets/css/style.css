@@ -83,7 +83,7 @@ a:hover{
 }
 
 h1{
-	font-size: 5rem;
+	font-size: 4.5rem;
     font-style: italic;
     font-weight: bold;
 }
@@ -313,13 +313,16 @@ hr {
 	background: url(../img/new-gotham/cover-newgoth.gif) no-repeat center center;
 }
 .odin {
-	background: url(../img/odin/odin-1.jpg) no-repeat center center;   
+	background: url(../img/odin/odin-2.jpg) no-repeat center center;   
 }
 .farenheit {
 	background: url(../img/farenheit/cover-farenheit.jpg) no-repeat center center;   
 }
 .brew {
 	background: url(../img/brew/brew-2.jpg) no-repeat center center;   
+}
+.honey {
+	background: url(../img/heaphoney/hh-3.gif) no-repeat center center;   
 }
 .whisks {
 	background: url(../img/whisks/whisks-cover.gif) no-repeat center left;   

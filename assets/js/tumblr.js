@@ -74,7 +74,7 @@ var main = function() {
 				nextPage.onclick = function() {
 		    		this.href="?page=2#feed"
 		    	};
-				$(prevButton).addClass("disabled");
+				$(prevButton).hide();
 		    };
 
         };
@@ -116,6 +116,12 @@ var main = function() {
 		
 			/* Make post photos responsive */
 			$('img').addClass('img-responsive');
+            
+            /* Find First Post */
+            var postTag = thisPost["tags"][0];
+            if (postTag == "first") {
+                $(nextButton).hide();
+            };   
 		
 		};
 	});
